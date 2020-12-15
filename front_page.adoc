@@ -39,7 +39,9 @@ image::medidata.png[]
 |
 Document version 1.0
 
-{docdate}
+Team 196, team196@mdsol.com
+
+{revdate}
 |
 |
 

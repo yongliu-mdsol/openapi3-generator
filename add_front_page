@@ -1,13 +1,16 @@
 #!/usr/bin/env ruby
+require "date"
 
 filename = ARGV[0]
 release_tag = ARGV[1]
+release_date = ARGV[2].empty? ? Date.today.to_s : ARGV[2]
 lines = File.readlines(filename)
 front_page = File.readlines("front_page.adoc")
 title = release_tag ? "#{lines.shift.chomp} #{release_tag}\n" : lines.shift
 
 total = []
 total.push title
+total.push ":revdate: #{release_date}\n"
 total.push front_page
 total.push lines
 

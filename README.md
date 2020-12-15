@@ -28,6 +28,11 @@ A release number can also be passed as a parameter, which will be displayed on t
 ./run.sh <path_to_your_openapi>.yaml <release_number>
 ```
 
+The date for the title page can also be passed as a parameter. Be sure to use quotation marks if the parameter contains a space. Also, note that the copyright year will remain set to the current year.
+```sh
+./run.sh <path_to_your_openapi>.yaml <release_number> "January 25th"
+```
+
 
 ## Update the script
 

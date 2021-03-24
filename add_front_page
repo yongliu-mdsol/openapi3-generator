@@ -10,7 +10,7 @@ title = release_tag ? "#{lines.shift.chomp} #{release_tag}\n" : lines.shift
 
 total = []
 total.push title
-total.push ":revdate: #{release_date}\n"
+total.push ":revdate: 24-MAR-2021\n"
 total.push front_page
 total.push lines
 
